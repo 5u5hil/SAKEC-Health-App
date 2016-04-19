@@ -46,7 +46,7 @@ angular.module('your_app_name.controllers', ['ionic', 'ngCordova'])
 
 //LOGIN
         .controller('LoginCtrl', function ($scope, $state, $templateCache, $q, $rootScope, $ionicLoading, $timeout) {
-            window.localStorage.setItem('interface_id', '4');
+            window.localStorage.setItem('interface_id', '4'); 
             $scope.interface = window.localStorage.getItem('interface_id');
             $scope.doLogIn = function () {
                 $ionicLoading.show({template: 'Loading...'});
@@ -112,7 +112,7 @@ angular.module('your_app_name.controllers', ['ionic', 'ngCordova'])
             }, 30);
         })
         .controller('SignupCtrl', function ($scope, $state, $http, $rootScope) {
-            $scope.interface = window.localStorage.setItem('interface_id', '9');
+            $scope.interface = window.localStorage.setItem('interface_id', '4');
             $scope.user = {};
             $scope.user.name = '';
             $scope.user.email = '';
